@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Soal PKN - Kelas 5 SD</title>
+<style>
+    /* Reset some default styles */
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+        padding: 20px;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #222;
+    }
+    h1 {
+        font-weight: 900;
+        color: #1a1a1a;
+        margin-bottom: 20px;
+        text-align: center;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    form {
+        background: #ffffffdd;
+        max-width: 900px;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+    .question {
+        margin-bottom: 25px;
+    }
+    p.question-text {
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        font-size: 1.05rem;
+        color: #3466F2;
+    }
+    .options label {
+        display: block;
+        background: #E3E9FF;
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+        user-select: none;
+        font-size: 0.94rem;
+        color: #1b1b1b;
+        border: 2px solid transparent;
+    }
+    .options label:hover {
+        background: #c4d2ff;
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+        accent-color: #3466F2;
+        cursor: pointer;
+    }
+    input[type="radio"]:focus-visible + label {
+        border-color: #3466F2;
+    }
+    button {
+        margin-top: 15px;
+        background: #3466F2;
+        color: white;
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 12px 20px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(52,102,242,.6);
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background: #274bb5;
+    }
+    #result {
+        background: white;
+        max-width: 900px;
+        width: 100%;
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #2a2a2a;
+    }
+    /* Scrollbar for form */
+    form::-webkit-scrollbar {
+        width: 8px;
+    }
+    form::-webkit-scrollbar-thumb {
+        background: #3466F2;
+        border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+        form {
+            padding: 15px 20px;
+            max-height: 90vh;
+        }
+        p.question-text {
+            font-size: 1rem;
+        }
+        .options label {
+            font-size: 0.9rem;
+        }
+        button {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Kuis Keragaman Budaya Indonesia</h1>
+<form id="quizForm">
+    <div class="question">
+        <p class="question-text">1. Indonesia memiliki beragam suku, agama, dan budaya. Hal ini disebut sebagai …</p>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a" /> a. Perbedaan pendapat</label>
+            <label><input type="radio" name="q1" value="b" /> b. Keragaman</label>
+            <label><input type="radio" name="q1" value="c" /> c. Persatuan</label>
+            <label><input type="radio" name="q1" value="d" /> d. Perpecahan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">2. Salah satu faktor penyebab keragaman di Indonesia adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a" /> a. Perbedaan warna bendera</label>
+            <label><input type="radio" name="q2" value="b" /> b. Perbedaan musim</label>
+            <label><input type="radio" name="q2" value="c" /> c. Letak geografis Indonesia</label>
+            <label><input type="radio" name="q2" value="d" /> d. Letak kantor desa</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">3. Keragaman agama di Indonesia dapat memperkaya …</p>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a" /> a. Perselisihan antarwarga</label>
+            <label><input type="radio" name="q3" value="b" /> b. Rasa egoisme</label>
+            <label><input type="radio" name="q3" value="c" /> c. Kehidupan sosial masyarakat</label>
+            <label><input type="radio" name="q3" value="d" /> d. Rasa iri dan dengki</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">4. Yang termasuk keragaman suku bangsa di Indonesia adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q4" value="a" /> a. Batak, Bugis, Minang</label>
+            <label><input type="radio" name="q4" value="b" /> b. Laptop, Televisi, Radio</label>
+            <label><input type="radio" name="q4" value="c" /> c. Sawah, Ladang, Hutan</label>
+            <label><input type="radio" name="q4" value="d" /> d. Ayam, Bebek, Ikan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">5. Bahasa Jawa, Sunda, dan Batak adalah contoh …</p>
+        <div class="options">
+            <label><input type="radio" name="q5" value="a" /> a. Bahasa internasional</label>
+            <label><input type="radio" name="q5" value="b" /> b. Bahasa asing</label>
+            <label><input type="radio" name="q5" value="c" /> c. Bahasa daerah</label>
+            <label><input type="radio" name="q5" value="d" /> d. Bahasa komputer</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">6. Rumah adat dari Sumatra Barat adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q6" value="a" /> a. Joglo</label>
+            <label><input type="radio" name="q6" value="b" /> b. Gadang</label>
+            <label><input type="radio" name="q6" value="c" /> c. Limas</label>
+            <label><input type="radio" name="q6" value="d" /> d. Tongkonan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">7. Baju Bodo berasal dari daerah …</p>
+        <div class="options">
+            <label><input type="radio" name="q7" value="a" /> a. Jawa Barat</label>
+            <label><input type="radio" name="q7" value="b" /> b. Kalimantan Barat</label>
+            <label><input type="radio" name="q7" value="c" /> c. Sulawesi Selatan</label>
+            <label><input type="radio" name="q7" value="d" /> d. Bali</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">8. Senjata tradisional “Keris” berasal dari …</p>
+        <div class="options">
+            <label><input type="radio" name="q8" value="a" /> a. Papua</label>
+            <label><input type="radio" name="q8" value="b" /> b. Jawa</label>
+            <label><input type="radio" name="q8" value="c" /> c. Sulawesi</label>
+            <label><input type="radio" name="q8" value="d" /> d. Kalimantan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">9. Rendang merupakan makanan khas dari daerah …</p>
+        <div class="options">
+            <label><input type="radio" name="q9" value="a" /> a. Jawa Tengah</label>
+            <label><input type="radio" name="q9" value="b" /> b. Sumatra Barat</label>
+            <label><input type="radio" name="q9" value="c" /> c. Aceh</label>
+            <label><input type="radio" name="q9" value="d" /> d. Sulawesi Selatan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">10. Tari Kecak berasal dari provinsi …</p>
+        <div class="options">
+            <label><input type="radio" name="q10" value="a" /> a. Nusa Tenggara Barat</label>
+            <label><input type="radio" name="q10" value="b" /> b. Bali</label>
+            <label><input type="radio" name="q10" value="c" /> c. Kalimantan Timur</label>
+            <label><input type="radio" name="q10" value="d" /> d. Aceh</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">11. Lagu daerah “Ampar-Ampar Pisang” berasal dari …</p>
+        <div class="options">
+            <label><input type="radio" name="q11" value="a" /> a. Jawa Barat</label>
+            <label><input type="radio" name="q11" value="b" /> b. Kalimantan Selatan</label>
+            <label><input type="radio" name="q11" value="c" /> c. Sulawesi Utara</label>
+            <label><input type="radio" name="q11" value="d" /> d. Lampung</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">12. Alat musik “Angklung” berasal dari …</p>
+        <div class="options">
+            <label><input type="radio" name="q12" value="a" /> a. Bali</label>
+            <label><input type="radio" name="q12" value="b" /> b. Sumatra Selatan</label>
+            <label><input type="radio" name="q12" value="c" /> c. Jawa Barat</label>
+            <label><input type="radio" name="q12" value="d" /> d. Nusa Tenggara Timur</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">13. Keuntungan dari adanya keragaman budaya adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q13" value="a" /> a. Menjadi sumber konflik</label>
+            <label><input type="radio" name="q13" value="b" /> b. Menimbulkan permusuhan</label>
+            <label><input type="radio" name="q13" value="c" /> c. Menambah wawasan dan pengetahuan</label>
+            <label><input type="radio" name="q13" value="d" /> d. Memecah persatuan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">14. Keragaman budaya dapat menjadi objek …</p>
+        <div class="options">
+            <label><input type="radio" name="q14" value="a" /> a. Pembuangan</label>
+            <label><input type="radio" name="q14" value="b" /> b. Kejahatan</label>
+            <label><input type="radio" name="q14" value="c" /> c. Wisata</label>
+            <label><input type="radio" name="q14" value="d" /> d. Penipuan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">15. Salah satu cara melestarikan budaya adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q15" value="a" /> a. Menghapuskan budaya lama</label>
+            <label><input type="radio" name="q15" value="b" /> b. Menggunakan produk luar negeri</label>
+            <label><input type="radio" name="q15" value="c" /> c. Menonton pertunjukan budaya</label>
+            <label><input type="radio" name="q15" value="d" /> d. Menyebarkan budaya asing</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">16. Sikap yang harus dimiliki terhadap budaya daerah lain adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q16" value="a" /> a. Merendahkan</label>
+            <label><input type="radio" name="q16" value="b" /> b. Meniru saja</label>
+            <label><input type="radio" name="q16" value="c" /> c. Toleransi</label>
+            <label><input type="radio" name="q16" value="d" /> d. Acuh tak acuh</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">17. Mempelajari tarian daerah termasuk bentuk …</p>
+        <div class="options">
+            <label><input type="radio" name="q17" value="a" /> a. Penghinaan budaya</label>
+            <label><input type="radio" name="q17" value="b" /> b. Pencemaran budaya</label>
+            <label><input type="radio" name="q17" value="c" /> c. Pelestarian budaya</label>
+            <label><input type="radio" name="q17" value="d" /> d. Penghilangan budaya</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">18. Menggunakan bahasa daerah dalam kehidupan sehari-hari bisa …</p>
+        <div class="options">
+            <label><input type="radio" name="q18" value="a" /> a. Menggantikan Bahasa Indonesia</label>
+            <label><input type="radio" name="q18" value="b" /> b. Memperkuat identitas budaya</label>
+            <label><input type="radio" name="q18" value="c" /> c. Menyulitkan komunikasi</label>
+            <label><input type="radio" name="q18" value="d" /> d. Menghambat kemajuan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">19. Lagu “Yamko Rambe Yamko” berasal dari daerah …</p>
+        <div class="options">
+            <label><input type="radio" name="q19" value="a" /> a. Papua</label>
+            <label><input type="radio" name="q19" value="b" /> b. Kalimantan</label>
+            <label><input type="radio" name="q19" value="c" /> c. Bali</label>
+            <label><input type="radio" name="q19" value="d" /> d. Jawa</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">20. Menggunakan pakaian adat saat upacara merupakan cara …</p>
+        <div class="options">
+            <label><input type="radio" name="q20" value="a" /> a. Menambah biaya</label>
+            <label><input type="radio" name="q20" value="b" /> b. Meramaikan pasar</label>
+            <label><input type="radio" name="q20" value="c" /> c. Melestarikan budaya</label>
+            <label><input type="radio" name="q20" value="d" /> d. Menyamar</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">21. Festival budaya daerah bisa memperkenalkan …</p>
+        <div class="options">
+            <label><input type="radio" name="q21" value="a" /> a. Produk luar negeri</label>
+            <label><input type="radio" name="q21" value="b" /> b. Budaya asing</label>
+            <label><input type="radio" name="q21" value="c" /> c. Budaya lokal kepada masyarakat luas</label>
+            <label><input type="radio" name="q21" value="d" /> d. Game online</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">22. Perbedaan tidak untuk diperdebatkan, tetapi …</p>
+        <div class="options">
+            <label><input type="radio" name="q22" value="a" /> a. Dihilangkan</label>
+            <label><input type="radio" name="q22" value="b" /> b. Dipaksakan</label>
+            <label><input type="radio" name="q22" value="c" /> c. Dihargai</label>
+            <label><input type="radio" name="q22" value="d" /> d. Diperbesar</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">23. Keragaman bisa memperkuat persatuan jika masyarakat …</p>
+        <div class="options">
+            <label><input type="radio" name="q23" value="a" /> a. Menjaga ego masing-masing</label>
+            <label><input type="radio" name="q23" value="b" /> b. Saling menghargai</label>
+            <label><input type="radio" name="q23" value="c" /> c. Tidak mau tahu</label>
+            <label><input type="radio" name="q23" value="d" /> d. Menyalahkan budaya lain</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">24. Keragaman makanan tradisional mencerminkan …</p>
+        <div class="options">
+            <label><input type="radio" name="q24" value="a" /> a. Kemiskinan</label>
+            <label><input type="radio" name="q24" value="b" /> b. Kekayaan budaya</label>
+            <label><input type="radio" name="q24" value="c" /> c. Kelangkaan</label>
+            <label><input type="radio" name="q24" value="d" /> d. Keseragaman</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">25. Pakaian adat “Ulos” berasal dari daerah …</p>
+        <div class="options">
+            <label><input type="radio" name="q25" value="a" /> a. Papua</label>
+            <label><input type="radio" name="q25" value="b" /> b. Sumatra Utara</label>
+            <label><input type="radio" name="q25" value="c" /> c. Jawa Timur</label>
+            <label><input type="radio" name="q25" value="d" /> d. Riau</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">26. Lagu “Manuk Dadali” berasal dari provinsi …</p>
+        <div class="options">
+            <label><input type="radio" name="q26" value="a" /> a. Jawa Tengah</label>
+            <label><input type="radio" name="q26" value="b" /> b. Jawa Barat</label>
+            <label><input type="radio" name="q26" value="c" /> c. Sumatra Selatan</label>
+            <label><input type="radio" name="q26" value="d" /> d. Aceh</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">27. Tari “Piring” berasal dari …</p>
+        <div class="options">
+            <label><input type="radio" name="q27" value="a" /> a. Sulawesi</label>
+            <label><input type="radio" name="q27" value="b" /> b. Sumatra Barat</label>
+            <label><input type="radio" name="q27" value="c" /> c. Kalimantan</label>
+            <label><input type="radio" name="q27" value="d" /> d. Maluku</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">28. Bahasa daerah yang digunakan oleh orang Bugis adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q28" value="a" /> a. Bahasa Bugis</label>
+            <label><input type="radio" name="q28" value="b" /> b. Bahasa Minang</label>
+            <label><input type="radio" name="q28" value="c" /> c. Bahasa Sunda</label>
+            <label><input type="radio" name="q28" value="d" /> d. Bahasa Betawi</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">29. Tari Saman berasal dari daerah …</p>
+        <div class="options">
+            <label><input type="radio" name="q29" value="a" /> a. Bali</label>
+            <label><input type="radio" name="q29" value="b" /> b. Aceh</label>
+            <label><input type="radio" name="q29" value="c" /> c. Papua</label>
+            <label><input type="radio" name="q29" value="d" /> d. Nusa Tenggara Barat</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">30. Provinsi DKI Jakarta memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q30" value="a" /> a. Bandung</label>
+            <label><input type="radio" name="q30" value="b" /> b. Surabaya</label>
+            <label><input type="radio" name="q30" value="c" /> c. Jakarta</label>
+            <label><input type="radio" name="q30" value="d" /> d. Semarang</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">31. Provinsi Sulawesi Selatan memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q31" value="a" /> a. Kendari</label>
+            <label><input type="radio" name="q31" value="b" /> b. Manado</label>
+            <label><input type="radio" name="q31" value="c" /> c. Makassar</label>
+            <label><input type="radio" name="q31" value="d" /> d. Palu</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">32. Provinsi Kalimantan Barat memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q32" value="a" /> a. Banjarmasin</label>
+            <label><input type="radio" name="q32" value="b" /> b. Pontianak</label>
+            <label><input type="radio" name="q32" value="c" /> c. Palangka Raya</label>
+            <label><input type="radio" name="q32" value="d" /> d. Samarinda</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">33. Provinsi Bali memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q33" value="a" /> a. Denpasar</label>
+            <label><input type="radio" name="q33" value="b" /> b. Gianyar</label>
+            <label><input type="radio" name="q33" value="c" /> c. Singaraja</label>
+            <label><input type="radio" name="q33" value="d" /> d. Bangli</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">34. Provinsi Jawa Tengah memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q34" value="a" /> a. Yogyakarta</label>
+            <label><input type="radio" name="q34" value="b" /> b. Semarang</label>
+            <label><input type="radio" name="q34" value="c" /> c. Solo</label>
+            <label><input type="radio" name="q34" value="d" /> d. Magelang</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">35. Provinsi Riau memiliki ibu kota …</p>
+        <div class="options">
+            <label><input type="radio" name="q35" value="a" /> a. Pekanbaru</label>
+            <label><input type="radio" name="q35" value="b" /> b. Padang</label>
+            <label><input type="radio" name="q35" value="c" /> c. Medan</label>
+            <label><input type="radio" name="q35" value="d" /> d. Tanjung Pinang</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">36. Pemerintah kabupaten/kota bekerja sama dengan masyarakat untuk …</p>
+        <div class="options">
+            <label><input type="radio" name="q36" value="a" /> a. Menurunkan budaya</label>
+            <label><input type="radio" name="q36" value="b" /> b. Membuat konflik</label>
+            <label><input type="radio" name="q36" value="c" /> c. Membangun daerah</label>
+            <label><input type="radio" name="q36" value="d" /> d. Menghindari kerja</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">37. Salah satu bentuk kerja sama pemerintah dan masyarakat dalam bidang olahraga adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q37" value="a" /> a. Upacara bendera</label>
+            <label><input type="radio" name="q37" value="b" /> b. Festival musik</label>
+            <label><input type="radio" name="q37" value="c" /> c. POPDA (Pekan Olahraga Pelajar Daerah)</label>
+            <label><input type="radio" name="q37" value="d" /> d. Lomba mewarnai</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">38. Mengikuti POPDA menunjukkan bahwa kita …</p>
+        <div class="options">
+            <label><input type="radio" name="q38" value="a" /> a. Malas berolahraga</label>
+            <label><input type="radio" name="q38" value="b" /> b. Tidak disiplin</label>
+            <label><input type="radio" name="q38" value="c" /> c. Mendukung program pemerintah</label>
+            <label><input type="radio" name="q38" value="d" /> d. Menolak olahraga</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">39. Aturan yang berlaku di kantor pemerintah kabupaten/kota harus …</p>
+        <div class="options">
+            <label><input type="radio" name="q39" value="a" /> a. Dilanggar</label>
+            <label><input type="radio" name="q39" value="b" /> b. Dilawan</label>
+            <label><input type="radio" name="q39" value="c" /> c. Ditaati</label>
+            <label><input type="radio" name="q39" value="d" /> d. Dihapus</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">40. Contoh fasilitas umum yang dibuat pemerintah kabupaten/kota adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q40" value="a" /> a. Rumah pribadi</label>
+            <label><input type="radio" name="q40" value="b" /> b. Taman kota</label>
+            <label><input type="radio" name="q40" value="c" /> c. Kebun pribadi</label>
+            <label><input type="radio" name="q40" value="d" /> d. Restoran</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">41. Menjaga fasilitas umum merupakan kewajiban …</p>
+        <div class="options">
+            <label><input type="radio" name="q41" value="a" /> a. Pemerintah saja</label>
+            <label><input type="radio" name="q41" value="b" /> b. Masyarakat saja</label>
+            <label><input type="radio" name="q41" value="c" /> c. Semua warga</label>
+            <label><input type="radio" name="q41" value="d" /> d. Anak-anak saja</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">42. Salah satu contoh kegiatan melestarikan budaya adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q42" value="a" /> a. Lomba makan kerupuk</label>
+            <label><input type="radio" name="q42" value="b" /> b. Festival daerah</label>
+            <label><input type="radio" name="q42" value="c" /> c. Jalan santai</label>
+            <label><input type="radio" name="q42" value="d" /> d. Upacara bendera</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">43. Mengikuti festival daerah harus dilakukan dengan …</p>
+        <div class="options">
+            <label><input type="radio" name="q43" value="a" /> a. Tidak tertib</label>
+            <label><input type="radio" name="q43" value="b" /> b. Semaunya</label>
+            <label><input type="radio" name="q43" value="c" /> c. Tertib dan rapi</label>
+            <label><input type="radio" name="q43" value="d" /> d. Diam saja</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">44. Kerja bakti di lingkungan tempat tinggal menunjukkan sikap …</p>
+        <div class="options">
+            <label><input type="radio" name="q44" value="a" /> a. Egois</label>
+            <label><input type="radio" name="q44" value="b" /> b. Gotong royong</label>
+            <label><input type="radio" name="q44" value="c" /> c. Pemalas</label>
+            <label><input type="radio" name="q44" value="d" /> d. Tidak peduli</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">45. Dengan kerja bakti, lingkungan akan menjadi …</p>
+        <div class="options">
+            <label><input type="radio" name="q45" value="a" /> a. Kumuh</label>
+            <label><input type="radio" name="q45" value="b" /> b. Kotor</label>
+            <label><input type="radio" name="q45" value="c" /> c. Bersih dan nyaman</label>
+            <label><input type="radio" name="q45" value="d" /> d. Menyeramkan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">46. Mengikuti kegiatan Pemilu menunjukkan kita …</p>
+        <div class="options">
+            <label><input type="radio" name="q46" value="a" /> a. Tidak peduli</label>
+            <label><input type="radio" name="q46" value="b" /> b. Tidak bertanggung jawab</label>
+            <label><input type="radio" name="q46" value="c" /> c. Peduli pada negara</label>
+            <label><input type="radio" name="q46" value="d" /> d. Melanggar aturan</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">47. Pemilu adalah kegiatan untuk memilih …</p>
+        <div class="options">
+            <label><input type="radio" name="q47" value="a" /> a. Ketua kelas</label>
+            <label><input type="radio" name="q47" value="b" /> b. Kepala desa</label>
+            <label><input type="radio" name="q47" value="c" /> c. Wakil rakyat</label>
+            <label><input type="radio" name="q47" value="d" /> d. Guru</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">48. Partisipasi masyarakat dalam Pemilu harus dilakukan secara …</p>
+        <div class="options">
+            <label><input type="radio" name="q48" value="a" /> a. Sembarangan</label>
+            <label><input type="radio" name="q48" value="b" /> b. Tertib dan damai</label>
+            <label><input type="radio" name="q48" value="c" /> c. Terpaksa</label>
+            <label><input type="radio" name="q48" value="d" /> d. Rahasia</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">49. Jika ada perbedaan pilihan dalam Pemilu, maka kita harus …</p>
+        <div class="options">
+            <label><input type="radio" name="q49" value="a" /> a. Bertengkar</label>
+            <label><input type="radio" name="q49" value="b" /> b. Marah-marah</label>
+            <label><input type="radio" name="q49" value="c" /> c. Saling menghormati</label>
+            <label><input type="radio" name="q49" value="d" /> d. Tidak ikut memilih</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p class="question-text">50. Salah satu manfaat mengikuti kegiatan di tingkat kabupaten/kota adalah …</p>
+        <div class="options">
+            <label><input type="radio" name="q50" value="a" /> a. Menghambat pembangunan</label>
+            <label><input type="radio" name="q50" value="b" /> b. Mempererat persatuan</label>
+            <label><input type="radio" name="q50" value="c" /> c. Menyebarkan hoax</label>
+            <label><input type="radio" name="q50" value="d" /> d. Melawan pemerintah</label>
+        </div>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Kirim Jawaban</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    function submitQuiz() {
+        const form = document.getElementById('quizForm');
+        const resultDiv = document.getElementById('result');
+
+        // Correct answer keys according to the questions above:
+        const correctAnswers = {
+            q1: 'b', q2: 'c', q3: 'c', q4: 'a', q5: 'c', q6: 'b', q7: 'c', q8: 'b', q9: 'b', q10: 'b',
+            q11: 'b', q12: 'c', q13: 'c', q14: 'c', q15: 'c', q16: 'c', q17: 'c', q18: 'b', q19: 'a', q20: 'c',
+            q21: 'c', q22: 'c', q23: 'b', q24: 'b', q25: 'b', q26: 'b', q27: 'b', q28: 'a', q29: 'b', q30: 'c',
+            q31: 'c', q32: 'b', q33: 'a', q34: 'b', q35: 'a', q36: 'c', q37: 'c', q38: 'c', q39: 'c', q40: 'b',
+            q41: 'c', q42: 'b', q43: 'c', q44: 'b', q45: 'c', q46: 'c', q47: 'c', q48: 'b', q49: 'c', q50: 'b'
+        };
+
+        let score = 0;
+        let unanswered = 0;
+
+        for(let i=1; i<=50; i++) {
+            let qName = 'q' + i;
+            const radios = form[qName];
+            let userAnswer = null;
+
+            if(radios) {
+                if(radios.length) { // name group radio buttons
+                    for(let r=0;r<radios.length;r++) {
+                        if(radios[r].checked) {
+                            userAnswer = radios[r].value;
+                            break;
+                        }
+                    }
+                } else { // single radio? Just in case
+                    if(radios.checked) userAnswer = radios.value;
+                }
+            }
+
+            if(userAnswer === null) {
+                unanswered++;
+            } else if(userAnswer === correctAnswers[qName]) {
+                score++;
+            }
+        }
+
+        let message = `<h2>Hasil Kuis</h2>`;
+        message += `<p>Jawaban benar: <strong>${score}</strong> dari 50.</p>`;
+
+        if(unanswered > 0) {
+            message += `<p><em>Anda belum menjawab <strong>${unanswered}</strong> pertanyaan.</em></p>`;
+        }
+
+        resultDiv.innerHTML = message;
+        resultDiv.scrollIntoView({behavior: "smooth"});
+    }
+</script>
+
+</body>
+</html>
